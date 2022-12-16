@@ -10,16 +10,16 @@ return (
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Raquetas</a>
+                    <a class="nav-link" href="raquetas.html">Raquetas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Wilson</a>
+                    <a class="nav-link" href="wilson.html">Wilson</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Head</a>
+                    <a class="nav-link" href="head.html">Head</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Prince</a>
+                    <a class="nav-link" href="prince.html">Prince</a>
                 </li>
             </ul>
         </div>
