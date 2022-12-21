@@ -5,7 +5,7 @@ const CardTres = () => {
     <div className="card">
         <img className="card-img-top" src="imagenes/pelota-tenis-babolat.jpg" alt="" />
         <div className="card-body">
-            <h5 className="card-title">Pelota Babolat Team</h5>
+            <h5 className="card-title">Pelotas Babolat</h5>
             <p className="card-text">Tubo de pelotas Babolat Team</p>
         </div>
     </div>

@@ -2,10 +2,11 @@ import '../App.css';
 
 import Navbar from './Navbar';
 import Main from './Main';
-// import Card from './Card';
-// import CardDos from './Card-Dos';
 import Footer from './Footer';
-import Cards from './Cards';
+import Cards from './CardsTubos';
+import H2Raquetas from './H2Raquetas';
+import CardsRaquetas from './CardsRaquetas';
+
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
  <Main/>
  <Footer/>
  <Cards/>
+ <H2Raquetas/>
+ <CardsRaquetas/>
  </>
   );
 }

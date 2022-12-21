@@ -3,9 +3,9 @@ import CardDos from "./Card-Dos"
 import CardTres from "./Card-Tres"
 
 
-const Cards = () => {
+const CardsTubos = () => {
   return (
-    <div className="divCards">
+    <div className="divCardsTubos">
     <Card/>
     <CardDos/>
     <CardTres/>
@@ -13,4 +13,4 @@ const Cards = () => {
   )
 }
 
-export default Cards
+export default CardsTubos

@@ -24,6 +24,8 @@ nav a:hover{
   width: 18rem;
   height: 22rem;
   border-radius: 10px;
+  margin: 20px;
+  text-align: center;
 }
 .card-title{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -38,7 +40,11 @@ nav a:hover{
   color: white;
   border-radius: 10px;
 }
-.divCards{
+.divCardsTubos{
+  display: flex;
+  justify-content: center;
+}
+.divCardsRaquetas{
   display: flex;
   justify-content: center;
 }
@@ -56,9 +62,25 @@ footer{
   bottom: 0;
   width: 100%;
 }
-.h2Main{
+.h1Main{
   color: white;
   text-align: center;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.h2Main{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-size: 1.5rem;
+}
+.h2Raquetas{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 

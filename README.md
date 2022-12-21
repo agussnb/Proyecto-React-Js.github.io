@@ -21,21 +21,21 @@ Este es mi proyecto de REACT JS el cual esta basado en un E Commerce de articulo
 ### Objetivos/Elementos a Completar/Añadir o Incompletos/Faltantes del proyecto
 - Pagina principal bien estructurada y con diseño agradable ✓ 
 - Barra de navegación ✓ 
-- Cards ✓ 
 - Footer ✓ 
 - Main ✓ 
-- Imagenes de raquetas ✘
-- Imagenes de tubos de pelotas ✓ 
-- Imagenes de raqueteros ✘
-- Imagenes de cestos para pelotas ✘
-- Imagenes de bolsos ✘
-- Imagenes de distintos tipos de cuerdas para raqueta ✘
-- Imagenes de distintos grips ✘
-- Imagenes de distintos overgrips ✘
+- Cards de raquetas ✓ 
+- Cards de tubos de pelotas ✓ 
+- Cards de raqueteros ✘
+- Cards de cestos para pelotas ✘
+- Cards de bolsos ✘
+- Cards de distintos tipos de cuerdas para raqueta ✘
+- Cards de distintos grips ✘
+- Cards de distintos overgrips ✘
 - Secciones con productos de las tres marcas ✘
 - Sección con productos Wilson ✘
 - Sección con productos Head ✘ 
 - Sección con productos Babolat ✘
 - Carro de compras ✘
 -------------------------------------
+
 
