@@ -1,15 +1,6 @@
 .App {
   text-align: center;
 }
-
-/* .App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgb(0, 0, 0);
-} */
-
 .App-link {
   color: #61dafb;
 }
@@ -23,9 +14,51 @@ nav a:hover{
   background-color: rgba(11, 208, 132, 0.836);
   font-style: oblique;
 }
+.navbar{
+  background-color: rgb(37, 36, 36);
+  box-shadow: -2px 5px 5px 5px rgba(0,0,0,0.75);;
+  padding: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .card{
-  width: 22rem;
-  height: 15rem;
+  width: 18rem;
+  height: 22rem;
+  border-radius: 10px;
+}
+.card-title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-img-top{
+  width: 18rem;
+  height: 14rem;
+  border-radius: 10px;
+}
+.card-text{
+  background-color: rgb(28, 27, 27);
+  color: white;
+  border-radius: 10px;
+}
+.divCards{
+  display: flex;
+  justify-content: center;
+}
+main{
+  padding: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+  background-color: rgb(37, 36, 36);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.75rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.h2Main{
+  color: white;
+  text-align: center;
 }
 
 

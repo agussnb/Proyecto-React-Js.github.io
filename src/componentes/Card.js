@@ -1,14 +1,13 @@
 
 function Card(){
     return (
-        <div className="card">
-            <img className="img-card" src='...' alt="img" />
-            <div className="card-body">
-                <h5 className="card-title">Titulo</h5>
-                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ab!</p>
-                <a className="btn btn-primary" href="index.html">Hola</a>
+            <div className="card">
+                <img className="card-img-top" src="imagenes/pelota-wilson-triniti.jpg" alt="" />
+                    <div className="card-body">
+                        <h5 className="card-title">Pelota Wilson Triniti</h5>
+                        <p className="card-text">Tubo de pelotas Wilson Triniti</p>
+                    </div>
             </div>
-        </div>
     )
 }
 
