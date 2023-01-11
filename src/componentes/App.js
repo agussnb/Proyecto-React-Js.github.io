@@ -1,26 +1,22 @@
 import '../App.css';
-
+import { BrowserRouter } from "react-router-dom"
 import Navbar from './Navbar';
 import Main from './Main';
 import Footer from './Footer';
-import Cards from './CardsTubos';
-import H2Raquetas from './H2Raquetas';
-import CardsRaquetas from './CardsRaquetas';
-import H2Tubos from './H2Tubos';
+import Card from './Card'
+import ItemListContainer from './ItemListContainer';
+
 
 
 
 function App() {
   return (
- <>
+ <BrowserRouter>
  <Navbar/>
  <Main/>
- <H2Tubos/>
- <Cards/>
- <H2Raquetas/>
- <CardsRaquetas/>
  <Footer/>
- </>
+ <ItemListContainer/>
+ </BrowserRouter>
   );
 }
 

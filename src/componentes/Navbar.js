@@ -11,16 +11,19 @@ return (
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a className="nav-link" href="/public/raquetas.html">Raquetas</a>
+                    <a className="nav-link" href="/productos">Productos</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="wilson.html">Wilson</a>
+                    <a className="nav-link" href="/wilson">Wilson</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="head.html">Head</a>
+                    <a className="nav-link" href="/head">Head</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="prince.html">Babolat</a>
+                    <a className="nav-link" href="/prince">Babolat</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link material-icons" href="/carrito">shopping_cart</a>
                 </li>
             </ul>
         </div>
