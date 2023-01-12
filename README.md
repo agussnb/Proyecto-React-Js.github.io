@@ -16,7 +16,6 @@ Este es mi proyecto de REACT JS el cual esta basado en un E Commerce de articulo
 - Bolsos
 - Cuerdas para raqueta
 - Grips 
-- Overgrips
 -------------------------------------
 ### Objetivos/Elementos a Completar/Añadir o Incompletos/Faltantes del proyecto
 - Pagina principal bien estructurada y con diseño agradable ✓ 
@@ -30,12 +29,12 @@ Este es mi proyecto de REACT JS el cual esta basado en un E Commerce de articulo
 - Cards de bolsos ✘
 - Cards de distintos tipos de cuerdas para raqueta ✘
 - Cards de distintos grips ✘
-- Cards de distintos overgrips ✘
 - Secciones con productos de las tres marcas ✘
 - Sección con productos Wilson ✘
 - Sección con productos Head ✘ 
 - Sección con productos Babolat ✘
 - Carro de compras ✘
+- Carro de compras icono ✓ 
 -------------------------------------
 
 

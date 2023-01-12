@@ -11,7 +11,14 @@ const ItemListContainer = () => {
 
     useEffect(() => {
 
-        const pedido = fetch("https://fakestoreapi.com/products")
+        const pedido = fetch("https://fakestoreapi.com/products", {
+            method:"POST",
+            body:JSON.stringify({
+                title:"Grip Babolat",
+                price:400,
+                id:"gripBabolat"
+            })
+        })
 
         pedido
             .then((respuesta) => {
@@ -31,7 +38,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
-            {load ? 'Productos Cargados' : 'Cargando...'}
+            {load ? 'Productos cargados' : 'Cargando...'}
             <ItemList productos={productos}/>
         </div>
     )

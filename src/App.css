@@ -17,7 +17,7 @@ nav a:hover{
 }
 .navbar{
   background-color: rgb(37, 36, 36);
-  box-shadow: -2px 5px 5px 5px rgba(0,0,0,0.75);;
+  box-shadow: -2px 5px 5px 5px rgba(0,0,0,0.75);
   padding: 1rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -89,5 +89,34 @@ text-decoration-line: underline;
 .h2Raquetas:hover{
   text-decoration-line: underline;
 }
-
+.imagenesProductos{
+  border-radius: 0.7rem;
+}
+.h3Productos{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.precioProductos{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  font-weight: 500;
+}
+.linkProductos{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  text-decoration: none;
+  color: black;
+}
+.linkProductos:hover{
+  background: rgb(10, 219, 163);
+  color: white;
+}
+.divProductos{
+  box-shadow: -2px 15px 20px rgba(0,0,0,0.75);
+  height: fit-content;
+}
+.descripcionProductos{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  margin-top: 0.4rem;
+}
 
