@@ -3,7 +3,7 @@ import Item from './Item'
 
 const ItemList = ({productos}) => {
     productos = [{id:"raquetaWilson",title:"Raqueta Wilson",price:'90.000',description:"Raqueta Wilson Blade 98 V7"},
-    {id:"raquetaHead",title:"Raqueta Head",price:'88.300', description:"Raqueta Head Gravity"},
+    {id:"raquetaHead",title:"Raqueta Head",price:'88.300', description:"Raqueta Head Gravity MP Lite"},
     {id:"raquetaBabolat",title:"Raqueta Babolat",price:'99.999', description:"Raqueta Babolat Pure Aero Rafa"},
     {id:"tuboWilson",title:"Tubo de pelotas Wilson",price:'4.799',description:"Tubo de pelotas Wilson Triniti"},
     {id:"tuboHead",title:"Tubo de pelotas Head",price:'3.000',description:"Tubo de pelotas Head Tour y Tour XT"},
@@ -19,7 +19,7 @@ const ItemList = ({productos}) => {
     {id:"bolsoBabolat",title:" Bolso Babolat",price:'50.000',description:"Bolso Babolat M Pure Drive"},
     {id:"cuerdasWilson",title:"Cuerdas Wilson",price:'78.999',description:"Cuerdas Element 16 Wilson 200m"},
     {id:"cuerdasHead",title:"Cuerdas Head",price:'70.000',description:"Cuerdas Hawk Head 200m"},
-    {id:"cuerdasBabolat",title:"Cuerdas Babolat",price:'55.999',description:"Cuerdas RPM Hurricane Babolat"},
+    {id:"cuerdasBabolat",title:"Cuerdas Babolat",price:'55.999',description:"Cuerdas RPM Hurricane Babolat 200m"},
     {id:"gripWilson",title:"Grip Wilson",price:'3.099',description:"Sublime Grip Wilson"},
     {id:"gripHead",title:"Grip Head",price:'5.300',description:"Grip Leather Tour Head"},
     {id:"gripBabolat",title:"Grip Babolat",price:'2.799',description:"Grip Syntec Uptake Babolat"}]

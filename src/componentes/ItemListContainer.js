@@ -37,7 +37,7 @@ const ItemListContainer = () => {
     }, [])
 
     return (
-        <div>
+        <div className="divLoadProductos">
             {load ? 'Productos cargados' : 'Cargando...'}
             <ItemList productos={productos}/>
         </div>

@@ -22,8 +22,8 @@ nav a:hover{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .card{
-  width: 18rem;
-  height: 22rem;
+  width: 15rem;
+  height: fit-content;
   border-radius: 10px;
   margin: 20px;
   text-align: center;
@@ -32,7 +32,7 @@ nav a:hover{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .card-img-top{
-  width: 18rem;
+  width: 26rem;
   height: 14rem;
   border-radius: 10px;
 }
@@ -40,14 +40,6 @@ nav a:hover{
   background-color: rgb(28, 27, 27);
   color: white;
   border-radius: 10px;
-}
-.divCardsTubos{
-  display: flex;
-  justify-content: center;
-}
-.divCardsRaquetas{
-  display: flex;
-  justify-content: center;
 }
 main{
   padding: 1rem;
@@ -118,5 +110,29 @@ text-decoration-line: underline;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: large;
   margin-top: 0.4rem;
+}
+.divLoadProductos{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  font-weight: 700;
+  color: white;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.d-block, .w-50{
+  position: relative;
+  left: 25rem;
+}
+button:hover{
+  background: rgb(10, 219, 163);
+  color: rgb(0, 0, 0);
+}
+button{
+  border-radius: 5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contenedorCard{
+  position: relative;
+  left: 30rem;
 }
 
