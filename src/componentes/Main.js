@@ -1,21 +1,17 @@
 import { Route, Routes } from "react-router-dom"
 import ItemListContainer from "./ItemListContainer"
 import Card from "./Card"
-import Wilson from "./Wilson"
-import Head from "./Head"
-import Babolat from "./Babolat"
-import RaquetaWilson from "./RaquetaWilson"
+import ItemDetailContainer from "./ItemDetailContainer"
+
 
 const Main = () => {
   return (
     <main>
             <Routes>
-                  <Route path="/Home" element={<ItemListContainer/>}></Route>
-                  <Route path="/Productos" element={<Card/>}></Route>
-                  <Route path="/Wilson" element={<Wilson/>}></Route>
-                  <Route path="/Head" element={<Head/>}></Route>
-                  <Route path="/Babolat" element={<Babolat/>}></Route>
-                  <Route path="/Productos/raquetaWilson" element={<RaquetaWilson/>}></Route>
+                  <Route path="/" element={<ItemListContainer/>}></Route>
+                  <Route path="/Productos/:categoria" element={<Card/>}></Route>
+                  <Route path="/category/:id" element={<ItemListContainer/>}></Route>
+                  <Route path="/item/:id" element={<ItemDetailContainer/>}></Route>
             </Routes>
     </main>
   )
@@ -23,5 +19,8 @@ const Main = () => {
 
 export default Main
 
-/*    <h1 className="h1Main">Pro Tennis Equipment</h1>
-        <h2>Lista de productos</h2> */
+{/* <Route path="/Wilson" element={<Wilson/>}></Route>
+<Route path="/Head" element={<Head/>}></Route>
+<Route path="/Babolat" element={<Babolat/>}></Route>
+<Route path="/Productos/raquetaWilson" element={<RaquetaWilson/>}></Route>
+<Route path="/Productos/raquetaHead" element={<RaquetaHead/>}></Route> */}

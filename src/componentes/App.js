@@ -3,18 +3,17 @@ import { BrowserRouter} from "react-router-dom"
 import Navbar from './Navbar';
 import Main from './Main';
 import Footer from './Footer';
-import ItemListContainer from './ItemListContainer';
+import Categorias from './Categorias';
 
 
 
 
 function App() {
+ // const categories = Categorias.categories
   return (
  <BrowserRouter>
- <Navbar/>
- <Main>
- <ItemListContainer/>
- </Main>
+ <Navbar />
+ <Main/>
  <Footer/>
  </BrowserRouter>
   );

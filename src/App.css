@@ -40,6 +40,8 @@ nav a:hover{
   background-color: rgb(28, 27, 27);
   color: white;
   border-radius: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: small;
 }
 main{
   padding: 1rem;
@@ -134,5 +136,20 @@ button{
 .contenedorCard{
   position: relative;
   left: 30rem;
+  bottom: 1rem;
+}
+ul,li{
+  color: white;
+  font-size: small;
+}
+.cardsProductos{
+ height: fit-content;
+ width: 20rem;
+}
+.btn{
+  margin: 0.3rem;
+}
+body{
+  overflow-x: hidden;
 }
 
