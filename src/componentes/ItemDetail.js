@@ -12,11 +12,10 @@ const sacarClick = ()=>{
     return(
         <div className='contenedorCard'>
             <div className='card bg-dark cardsProductos'>
+            <h3 className='card-title text-white'>{data.title}</h3>
                 <img src={`/imagenes/${data.id}.jpg`}alt="" />
                 <div className='card-body'>
-                    <p className='card-text'>{data.title}</p>
                     <p className='card-text'>{data.description}</p>
-                   
                     <p className='card-text'>Precio ${data.price}</p>
                     <p className='card-text'>Unidades seleccionadas {contador}</p>
                     <button className='btn btn-light' onClick={agregarClick}>+</button>

@@ -3,16 +3,18 @@ import { BrowserRouter} from "react-router-dom"
 import Navbar from './Navbar';
 import Main from './Main';
 import Footer from './Footer';
-import Categorias from './Categorias';
+import Header from './Header';
+
+
 
 
 
 
 function App() {
- // const categories = Categorias.categories
   return (
  <BrowserRouter>
  <Navbar />
+ <Header/>
  <Main/>
  <Footer/>
  </BrowserRouter>
