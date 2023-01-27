@@ -7,23 +7,12 @@ const ItemListContainer = () => {
     const [load, setLoad] = useState(false)
     const [productos,setProductos] = useState([])
 
-
-
     useEffect(() => {
-        const pedido = fetch("https://fakestoreapi.com/products", {
-            method:"POST",
-            body:JSON.stringify({
-                title:"Grip Babolat",
-                price:400,
-                id:"GripBabolat"
-            })
-        })
-
+        const pedido = fetch("/productos.json")
         pedido
             .then((respuesta) => {
                 const productos = respuesta.json()
                 return productos
-
             })
             .then((productos) => {
                 setProductos(productos)
@@ -32,7 +21,6 @@ const ItemListContainer = () => {
             .catch((error) => {
                 console.log(error)
             })
-
     },  [])
     return (
         <div className="divLoadProductos">
@@ -41,6 +29,4 @@ const ItemListContainer = () => {
         </div>
     )
 }
-
-
 export default ItemListContainer

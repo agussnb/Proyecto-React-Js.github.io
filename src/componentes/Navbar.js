@@ -13,13 +13,13 @@ return (
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
                 <li className="nav-item" >
-                <Link className="nav-link" to={"/category/:categoryId"}>Wilson</Link>
+                <Link className="nav-link" to={"/category/1"}>Wilson</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to={`/category/:categoryId`}>Head</Link>
+                    <Link className="nav-link" to={`/category/2`}>Head</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link" to={`/category/:categoryId`}>Babolat</Link>
+                <Link className="nav-link" to={`/category/3`}>Babolat</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link material-icons" to={`/carrito`}>shopping_cart</Link>
