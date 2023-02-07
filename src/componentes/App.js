@@ -4,6 +4,9 @@ import Navbar from './Navbar';
 import Main from './Main';
 import Footer from './Footer';
 import Header from './Header';
+import CustomProvider from './CustomProvider';
+import 'react-toastify/dist/ReactToastify.css'
+import {ToastContainer} from 'react-toastify'
 
 
 
@@ -12,12 +15,16 @@ import Header from './Header';
 
 function App() {
   return (
- <BrowserRouter>
- <Navbar />
- <Header/>
- <Main/>
- <Footer/>
- </BrowserRouter>
+    <CustomProvider>
+        <BrowserRouter>
+        <Navbar />
+        <Header/>
+        <Main/>
+        <Footer/>
+        </BrowserRouter>
+        <ToastContainer/>
+    </CustomProvider>
+ 
   );
 }
 

@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react"
+import { collection, getDocs } from "firebase/firestore"
+import { db } from "../firebase"
 import { useParams } from "react-router-dom"
 import ItemList from "./ItemList"
+import { toast } from "react-toastify"
+
+const productosCollection = collection(db,"productos")
 
 const ItemListContainer = () => {
 
@@ -8,23 +13,51 @@ const ItemListContainer = () => {
     const [productos,setProductos] = useState([])
 
     useEffect(() => {
-        const pedido = fetch("/productos.json")
-        pedido
-            .then((respuesta) => {
-                const productos = respuesta.json()
-                return productos
-            })
-            .then((productos) => {
-                setProductos(productos)
-                setLoad(true)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-    },  [])
+        toast.info("Cargando productos ...",{
+            position: "top-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+        });
+        const pedidoFirestore = getDocs(productosCollection)
+        pedidoFirestore
+        .then((respuesta) => {
+            const productos = respuesta.docs.map(doc => ({ ...doc.data(), id: doc.id }))
+            setProductos(productos)
+            setLoad(true)
+            toast.dismiss()
+            toast.success("Productos cargados!",{
+                position: "top-right",
+                autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
+        })
+        .catch((error) => {
+            console.log(error)
+            toast.error("Hubo un error, vuelva a intentarlo!" + error.message,{
+                position: "top-right",
+                autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
+        })
+}, [])
     return (
         <div className="divLoadProductos">
-            {load ? 'Lista de productos cargada' : 'Cargando lista de productos...'}
+            {load ? null : 'Cargando lista de productos...'}
             <ItemList productos={productos}/>
         </div>
     )

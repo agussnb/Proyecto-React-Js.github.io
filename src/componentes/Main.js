@@ -1,20 +1,24 @@
 import { Route, Routes } from "react-router-dom"
 import ItemListContainer from "./ItemListContainer"
 import ItemDetailContainer from "./ItemDetailContainer"
-import Carrito from './Carrito'
+import Cart from './Cart'
 import MarcasContainer from "./MarcasContainer"
+import { useContext } from "react"
 
+//export const CartContext = React.createContext('');
 
-
+//<CartContext.Provider value=""></CartContext.Provider>
 const Main = () => {
   return (
     <main>
-            <Routes>
-                  <Route path="/" element={<ItemListContainer/>}></Route>
-                  <Route path="/category/:categoryId" element={<MarcasContainer/>}></Route>
-                  <Route path="/item/:id" element={<ItemDetailContainer/>}></Route>
-                  <Route path="/carrito" element={<Carrito/>}></Route>
-            </Routes>
+              
+                <Routes>
+                    <Route path="/" element={<ItemListContainer/>}></Route>
+                    <Route path="/category/:categoryId" element={<MarcasContainer/>}></Route>
+                    <Route path="/item/:id" element={<ItemDetailContainer/>}></Route>
+                    <Route path="/carrito" element={<Cart/>}></Route>
+              </Routes>
+            
     </main>
   )
 }
