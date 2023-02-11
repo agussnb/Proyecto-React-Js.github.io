@@ -216,7 +216,7 @@ footer a{
 .vaciarCarrito{
 position: absolute;
 bottom: 45rem;
-left: 75rem;
+left: 110rem;
 }
 .finalizarCompra{
 display: flex;
@@ -264,6 +264,12 @@ margin-top: 1rem;
   font-weight: 700;
   color: #000000;
 }
+.pPago{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
 .d-grid{
   grid-template-columns: repeat(3,25rem);
 }
@@ -271,16 +277,27 @@ margin-top: 1rem;
   .d-grid{
     grid-template-columns: repeat(4,25rem);
   }
+  .finalizarCompra{
+    position: relative;
+    top: 7rem;
+  }
 }
 @media screen and (max-width:1500px) {
   .d-grid{
     grid-template-columns: repeat(3,25rem);
   }
+  .finalizarCompra{
+    position: relative;
+    top: 1rem;
+  }
+  .vaciarCarrito{
+    position: absolute;
+    bottom: 80rem;
+    left: 75rem;
+    }
 }
 @media screen and (max-width:1000px) {
   .d-grid{
     grid-template-columns: repeat(2,25rem);
   }
 }
-
-
