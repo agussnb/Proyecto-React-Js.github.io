@@ -1,68 +1,61 @@
-import { useState } from "react"
-import {db} from '../firebase'
-import { collection, getDoc, doc } from "firebase/firestore"
+import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import { useEffect } from "react"
 import { toast } from "react-toastify"
 
-const ItemCount = ({onAdd}) => {
-  const [stock, setStock] = useState(0)
-  const {id} = useParams()
-  const productosCollection = collection(db, 'productos')
-  const referencia = doc(productosCollection,id)
-  useEffect(()=>{
-    getDoc(referencia).then(doc=>{
-      if(doc.exists){
-        setStock(doc.data().stock)
-      }
-    })
-  },[]);
+const ItemCount = ({ onAdd }) => {
+const [stock, setStock] = useState(0)
+const [contador, setContador] = useState(1)
+const { id } = useParams()
 
-  const [contador, setContador] = useState(1)
-  //const {carrito} = useContext(contexto)
+useEffect(() => {
+fetch('/productos.json')
+.then(res => res.json())
+.then(data => {
+const product = data.find(p => p.id === id)
+setStock(product.stock)
+console.log(product)
+})
+}, [id])
 
-  const handleSumar = () => {
-    if(contador < stock){
-      return setContador(contador + 1)
-    }
-    if(contador >= stock){
-      toast.error('No hay mas stock disponible.',{
-        position: "top-right",
-        autoClose: 1000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-    });
-    }
-  }
-
+const handleSumar = () => {
+if (contador < stock) {
+return setContador(contador + 1)
+}
+if (contador >= stock) {
+toast.error('No hay más stock disponible.', {
+position: "top-right",
+autoClose: 1000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "dark",
+})
+}
+}
 const handleRestar = () => {
-  if (contador > 1) {
-    setContador(contador - 1)
-  }
+if (contador > 1) {
+setContador(contador - 1)
+}
+}
+const handleConfirmar = () => {
+onAdd(contador)
+}
+const handleResetear = () => {
+setContador(1)
 }
 
-  const handleConfirmar = () => {
-    onAdd(contador)
-  }
-
-
-  const handleResetear = () => {
-    setContador(1)
-  }
-
-  return (
-    <div>
-      <button className="btn btn-light" onClick={handleSumar}>+</button>
-      <button className="btn btn-light" onClick={handleRestar}>-</button>
-      <p className="text-light">Unidades a agregar al carro : {contador}</p>
-      <button className="btn btn-light" onClick={handleResetear}>reset</button>
-      <button className="btn btn-light" onClick={handleConfirmar}>confirmar</button>
-    </div>
-  )
+return (
+<div>
+<button className="btn btn-light" onClick={handleSumar}>+</button>
+<button className="btn btn-light" onClick={handleRestar}>-</button>
+<p className="text-light">Unidades a agregar al carro: {contador}</p>
+<p className="text-light confirm">Presionar confirmar cuando tenga seleccionadas las unidades deseadas a agregar al carro.</p>
+<button className="btn btn-light" onClick={handleResetear}>reset</button>
+<button className="btn btn-light" onClick={handleConfirmar}>confirmar</button>
+</div>
+)
 }
 
 export default ItemCount

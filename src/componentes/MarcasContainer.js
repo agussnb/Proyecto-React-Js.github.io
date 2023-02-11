@@ -17,7 +17,6 @@ const MarcasContainer = () => {
         const response = await fetch('/productos.json');
         const products = await response.json();
         const productsWithMatchingCategory = products.filter((product) => product.categoryId === Number(categoryId));
-        console.log([productsWithMatchingCategory])
         setSelectedProducts(productsWithMatchingCategory);
         setLoading(false)
         toast.dismiss()

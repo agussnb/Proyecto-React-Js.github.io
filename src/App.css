@@ -24,13 +24,12 @@ nav a:hover{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .card{
-  width: 15rem;
+  width: 20rem;
   height: fit-content;
   border-radius: 10px;
   margin-bottom: 0.8rem;
   margin-top: 1rem;
   text-align: center;
- 
 }
 .card-title{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -46,6 +45,15 @@ nav a:hover{
   border-radius: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
+}
+.textoTarjeta{
+  border: solid 0.1rem;
+  padding: 0.1rem;
+  border-radius: 1rem;
+}
+.PaymentForm{
+  display: flex;
+  justify-content: center;
 }
 main{
   padding: 1rem;
@@ -182,9 +190,97 @@ header{
   margin-top: 1rem;
 }
 footer a{
-  text-decoration: none;
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-text{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+.form-label{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+#exampleCreditCardNumber,#exampleCreditCardDate,#exampleCreditCardName,#exampleCreditCardSecurityNumber{
+  width: fit-content;
+}
+.h1ProdutosCarrito{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-style: oblique;
+}
+.vaciarCarrito{
+position: absolute;
+bottom: 45rem;
+left: 75rem;
+}
+.finalizarCompra{
+display: flex;
+justify-content: center;
+margin-top: 1rem;
+}
+.confirm{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: smaller;
+}
+.h1ReciboCompra{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffffff;
+  text-align: center;
+}
+.h2ReciboCompra{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffffff;
+  text-align: center;
+}
+.h3DatosComprador{
+  color: #ffffff;
+}
+.divReciboCompra{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+}
+.divDatosComprador{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+}
+.pReciboCompra{
+  border: solid #ffff 0.1rem;
+  border-radius: 2rem;
+  background-color: #ffff; opacity: 35%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  text-align: center;
+  font-weight: 700;
+  color: #000000;
+}
+.d-grid{
+  grid-template-columns: repeat(3,25rem);
+}
+@media screen and (max-width:2000px) {
+  .d-grid{
+    grid-template-columns: repeat(4,25rem);
+  }
+}
+@media screen and (max-width:1500px) {
+  .d-grid{
+    grid-template-columns: repeat(3,25rem);
+  }
+}
+@media screen and (max-width:1000px) {
+  .d-grid{
+    grid-template-columns: repeat(2,25rem);
+  }
 }
 
 
